@@ -1,0 +1,169 @@
+:root {
+    --color-green: rgb(43, 197, 20);
+    --color-light-blue: rgb(148, 238, 241);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    font-family: Arial, serif;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(
+            34deg,
+            var(--color-green),
+            var(--color-light-blue)
+    );
+}
+
+div#exception {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    background: -webkit-linear-gradient(
+            34deg,
+            #cc9e76,
+            #ff7848)
+}
+
+div#info {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    background: -webkit-linear-gradient(
+            34deg,
+            #83cc93,
+            #09ff02)
+}
+
+div#patient-form {
+    margin-top: 5%;
+    margin-bottom: 20px;
+    height: 30%;
+    width: 1600px;
+    border-radius: 15px;
+    padding: 5px 20px 5px 5px;
+    background: -webkit-linear-gradient(
+            34deg,
+            #aaccac,
+            #a0ffdd)
+}
+
+div#inputs input {
+    margin: 5px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+div#filters {
+    height: 20px;
+    width: inherit;
+}
+
+div#filters input {
+    height: 20px;
+    width: inherit;
+    alignment: left;
+    border-radius: 5px;
+    border-color: #367630;
+}
+
+button {
+    width: 150px;
+    border-radius: 5px;
+}
+
+button#save {
+    background-color: #4d9e43;
+}
+
+button#delete {
+    background-color: #c44822;
+}
+
+button#delete {
+    background-color: #c4b07b;
+}
+
+div#filters button {
+    height: 24px;
+    alignment: left;
+    background-color: #83cc93;
+}
+
+div#patients {
+    width: 1600px;
+    border-radius: 15px;
+    border-spacing: 0;
+    background: #89cc48;
+    padding: 5px 20px 5px 5px;
+    float: left;
+}
+
+table {
+    border: 1px solid #031c09;
+    alignment: left;
+    height: 400px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+div#patients table thead {
+    display: table;
+    overflow: auto;
+    background-color: #6ea73e;
+}
+
+div#patients table thead th {
+    position: sticky; top: 0;
+    box-shadow: 1px 1px 0 #072501; border-top: 0;
+}
+
+thead, tbody tr {
+    display: table;
+    height: 0;
+    width: 100%;
+    table-layout:fixed;
+    white-space: nowrap;
+}
+
+div#patients table tbody {
+    display: block;
+}
+
+tr#patient {
+    height: inherit;
+    width: 100%;
+    table-layout: fixed;
+    background-color: #65cc5c;
+    border-style: double;
+    border-color: #042f0f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+tr#patient td {
+    height: 0;
+    background-color: #6ea73e;
+}
+
+.table-title {
+    font-size: 30px;
+    color: #075015;
+    width: 100%;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: #2b5926;
+}
+
+.hidden {
+    display: none;
+}
