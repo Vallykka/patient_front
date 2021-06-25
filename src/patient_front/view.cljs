@@ -59,6 +59,7 @@
 (defn format-address
   [address]
   (merge
+    {:label "Адрес"}
     (select-keys (:data address) [:country :region :city :street :house :flat])
     (select-keys address [:value :address-id])))
 
@@ -82,7 +83,6 @@
                        (if-not (nil? params)
                          (merge {} params off-lim)
                          off-lim)))]
-        (pr params req)
         (reset! patients resp)
         )))
 
